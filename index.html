@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo List</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="app">
+
+        <h1>My Tasks</h1>
+        <p class="subtitle">Keep it simple. Get it done.</p>
+
+        <div class="input-row">
+            <input type="text" id="taskinput" placeholder="Write a task..." />
+            <button class="btn-add" onclick="addtask()">+ Add</button>
+        </div>
+
+        <div class="stats">
+            <span>Total: <b id="stattotal">0</b></span>
+            <span>Done: <b id="statdone">0</b></span>
+            <span>Left: <b id="statleft">0</b></span>
+        </div>
+
+        <ul id="tasklist"></ul>
+
+        <button class="btn-clear" onclick="cleardone()">✕ Clear completed tasks</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
